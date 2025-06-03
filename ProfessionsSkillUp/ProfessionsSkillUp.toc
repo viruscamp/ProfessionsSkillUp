@@ -1,0 +1,20 @@
+## Interface: 110105
+## Title: ProfessionsSkillUp
+## Notes: Shows skill up rank in official professions window.
+## Author: VirusCamp
+## Version: 1.0
+## Category-enUS: Professions
+## Category-deDE: Berufe
+## Category-esES: Profesiones
+## Category-esMX: Profesiones
+## Category-frFR: Métiers
+## Category-itIT: Professioni
+## Category-koKR: 전문 기술
+## Category-ptBR: Profissões
+## Category-ruRU: Профессии
+## Category-zhCN: 专业
+## Category-zhTW: 專業技能
+## SavedVariables: ProfessionsSkillUp
+
+Data.lua
+ProfessionsSkillUp.lua
