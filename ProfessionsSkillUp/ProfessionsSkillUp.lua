@@ -33,8 +33,7 @@ local function After_ProfessionsRecipeListRecipeMixin_Init(self, node, hideCraft
 
 	local elementData = node:GetData()
 	local recipeID = elementData.recipeInfo.recipeID
-	labelSkillUp:SetText(skillUpText(recipeID))	
+	labelSkillUp:SetText(skillUpText(recipeID))
 end
-addonTable.After_ProfessionsRecipeListRecipeMixin_Init = After_ProfessionsRecipeListRecipeMixin_Init
 
 hooksecurefunc(ProfessionsRecipeListRecipeMixin, 'Init', After_ProfessionsRecipeListRecipeMixin_Init)

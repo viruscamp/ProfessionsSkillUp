@@ -2,7 +2,7 @@
 ## Title: ProfessionsSkillUp
 ## Notes: Shows skill up rank in official professions window.
 ## Author: VirusCamp
-## Version: 1.0
+## Version: 1.1
 ## Category-enUS: Professions
 ## Category-deDE: Berufe
 ## Category-esES: Profesiones
@@ -15,6 +15,9 @@
 ## Category-zhCN: 专业
 ## Category-zhTW: 專業技能
 ## SavedVariables: ProfessionsSkillUp
+## LoadOnDemand: 1
+## Dependencies: Blizzard_ProfessionsTemplates
+## LoadWith: Blizzard_ProfessionsTemplates
 
 Data.lua
 ProfessionsSkillUp.lua
