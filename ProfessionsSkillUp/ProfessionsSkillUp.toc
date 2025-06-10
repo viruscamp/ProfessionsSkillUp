@@ -14,7 +14,7 @@
 ## Category-ruRU: Профессии
 ## Category-zhCN: 专业
 ## Category-zhTW: 專業技能
-## SavedVariables: ProfessionsSkillUp
+## SavedVariables: ProfessionsSkillUpDB
 ## LoadOnDemand: 1
 ## Dependencies: Blizzard_ProfessionsTemplates
 ## LoadWith: Blizzard_ProfessionsTemplates

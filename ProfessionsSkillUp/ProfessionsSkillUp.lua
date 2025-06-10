@@ -37,3 +37,34 @@ local function After_ProfessionsRecipeListRecipeMixin_Init(self, node, hideCraft
 end
 
 hooksecurefunc(ProfessionsRecipeListRecipeMixin, 'Init', After_ProfessionsRecipeListRecipeMixin_Init)
+
+local function After_ProfessionsRecipeSchematicFormMixin_Init(self, recipeInfo, isRecraftOverride)
+	local labelSkillUp = self.labelSkillUp
+	if (labelSkillUp == nil) then
+		labelSkillUp = self:CreateFontString(nil, 'OVERLAY', 'GameFontNormal')
+		self.labelSkillUp = labelSkillUp
+	end
+	self.labelSkillUp:Hide()
+
+	if (self.isInspection) then
+		return
+	end
+
+	local isRecraft = self.RecraftingOutputText and self.RecraftingOutputText:IsShown()
+	if (isRecraft) then
+		return
+	end
+
+	local recipeID = recipeInfo.recipeID
+	labelSkillUp:SetText(skillUpText(recipeID))
+	labelSkillUp:Show()
+
+	local minimized = ProfessionsUtil.IsCraftingMinimized()
+	if (minimized) then
+		labelSkillUp:SetPoint('RIGHT', self.OutputText, 'LEFT', 250, 0)
+	else
+		labelSkillUp:SetPoint('RIGHT', self.OutputText, 'LEFT', 290, 0)
+	end
+end
+
+hooksecurefunc(ProfessionsRecipeSchematicFormMixin, 'Init', After_ProfessionsRecipeSchematicFormMixin_Init)
